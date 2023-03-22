@@ -9,9 +9,9 @@
     <title>Document</title>
 </head>
 <body>
-<header class="h-15v bg-header">
-    <h1>CABECERA</h1>
-</header>
+<x-layout.header>
+
+</x-layout.header>
 <nav class="h-10v bg-nav">
     <h2>MENU</h2>
 </nav>

@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::resource("empresas", EmpresaController::class);
+
 Route::view('main',"empresa.main");
 
 Route::get('/', function () {

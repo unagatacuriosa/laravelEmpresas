@@ -19,7 +19,7 @@ module.exports = {
                 "65v": "65vh"
             },
             colors:{
-                "header": "#E6621F",
+                "header": "#4D2278",
                 "nav": "#EDEDEE",
                 "main": "#FFFFFF",
                 "footer": "#898989"
