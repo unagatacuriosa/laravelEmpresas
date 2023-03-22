@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::view('main',"empresa.main");
+
 Route::get('/', function () {
     return view('welcome');
 });

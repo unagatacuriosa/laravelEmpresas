@@ -1,5 +1,30 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
+# Clonar el proyecto
+Clono el proyecto
+```shell
+git clone http://....
+cd laravel_empresas
+composer update
+npm install
+```
+Verifico si tengo el fichero .env, sino lo consigo y genero la clave
+```shell
+php artisan key:gen
+```
+
+Cargo las bases de datos de mi [docker](./docker-compose.yaml)
+```shell
+# Al estr funcionando con docker, lo levanto.
+docker compose up -d
+php artisan migrate
+```
+
+Levanto el poyecto y verifico su funcionamiento (el & para no peder el terminal y ejecutar el proceso el background)
+```shell
+php artisan serve &
+npm run dev
+```
 
 ## Proyecto empresas
 Creao un proyecto de gestion de empresas
@@ -46,3 +71,6 @@ php artisan serve &
 # Para iniciar el herramienta de transpiracion del cliente (en este caso carga el CSS)
 npm run dev
 ```
+
+# 2. Diseño web
+* Empezamos con el diseño del loyout siguiendo las [especificaciones](./documentacion/diseño_layout.md)
