@@ -1,9 +1,10 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-# Clonar el proyecto
+# 0. Clonar el proyecto
 Clono el proyecto
+
 ```shell
-git clone http://....
+git clone https://....
 cd laravel_empresas
 composer update
 npm install
@@ -26,7 +27,7 @@ php artisan serve &
 npm run dev
 ```
 
-## Proyecto empresas
+## 1. Empezar proyecto empresas
 Creao un proyecto de gestion de empresas
 ```shell
 laravel new Empresas
@@ -59,10 +60,17 @@ DB_DATABASE=empresas
 DB_USERNAME=gabi
 DB_PASSWORD=gabi
 ```
-Ejecuto las migraciones
+### 2. CRUD BBDD (Crear)
+1. Creamos migraciones
+2. Configuramos las factorias
+3. Configuramos los seeders
+4. En config/app -> cambiamos los idiomas 'fake_local'
+5. Ejecuto las migraciones
 ```shell
 php artisan migrate
 ```
+
+### 3. Arranco el proyecto
 Arranco las herramientas de cliente
 ```shell
 # Para iniciar un server local de Laravel
@@ -72,5 +80,17 @@ php artisan serve &
 npm run dev
 ```
 
-# 2. Diseño web
+### 4. CRUD PETICIONES (Lectura)
+1. Segun los datos de la tabla los **modelos** tendran unos parametros
+2. Cambiamos los permisos - Http/request - Segun los parametros del formulario
+   - store y update = true
+3. Creamos los controladores
+4. Creamos las rutas
+   - Cuando hay una solicitud pasa algo (cuando lo pides la url pides el controlador)
+   - Devolver una vista desde el controlador (formulario de crear)
+     1. get -> petición
+     2. post -> store
+     3. return y actualizar vista
+
+# _. Diseño web
 * Empezamos con el diseño del loyout siguiendo las [especificaciones](./documentacion/diseño_layout.md)
